@@ -79,10 +79,6 @@
        drop 
        foreign key `FK162v6eiogk4jr8ykjoe80255x`;
 
-    alter table `provider` 
-       drop 
-       foreign key FK_b1gwnjqm6ggy9yuiqm0o4rlmd;
-
     alter table `sponsor` 
        drop 
        foreign key FK_20xk0ev32hlg96kqynl6laie2;
@@ -144,8 +140,6 @@
     drop table if exists `participant`;
 
     drop table if exists `pradas_bulletin`;
-
-    drop table if exists `provider`;
 
     drop table if exists `request`;
 

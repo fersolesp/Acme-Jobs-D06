@@ -99,12 +99,6 @@ master.menu.administrator.investor-records.create = Create a Investor Record
 master.menu.administrator.investor-records.list = Manage Investor Records
 master.menu.administrator.auditor.list = List auditors' requests
 
-# master.menu.provider ########################################################
-
-master.menu.provider = Provider
-master.menu.provider.favourite-link = Favourite link
-master.menu.provider.request.create= Create a Request
-
 # master.menu.consumer ##########################################################
 
 master.menu.consumer = Consumer
@@ -137,8 +131,6 @@ master.menu.auditor.job.listnot= Jobs out of my Audit Records
 
 master.menu.user-account = Account
 master.menu.user-account.general-data = General data
-master.menu.user-account.provider = Provider data
-master.menu.user-account.become-provider = Become a provider
 master.menu.user-account.consumer = Consumer data
 master.menu.user-account.become-consumer = Become a consumer
 master.menu.user-account.become-employer = Become a employer
