@@ -30,7 +30,7 @@ bg=yellow</panel_attributes>
     <id>UMLClass</id>
     <coordinates>
       <x>492</x>
-      <y>216</y>
+      <y>210</y>
       <w>114</w>
       <h>72</h>
     </coordinates>
@@ -65,11 +65,11 @@ bg=blue</panel_attributes>
       <x>540</x>
       <y>192</y>
       <w>18</w>
-      <h>36</h>
+      <h>30</h>
     </coordinates>
     <panel_attributes>lt=..
 </panel_attributes>
-    <additional_attributes>10.0;40.0;10.0;10.0</additional_attributes>
+    <additional_attributes>10.0;30.0;10.0;10.0</additional_attributes>
   </element>
   <element>
     <id>UMLClass</id>
@@ -153,14 +153,19 @@ bg=yellow</panel_attributes>
     <id>UMLClass</id>
     <coordinates>
       <x>492</x>
-      <y>300</y>
+      <y>288</y>
       <w>114</w>
-      <h>36</h>
+      <h>84</h>
     </coordinates>
     <panel_attributes>&lt;&lt;Enum&gt;&gt;
 CustomCommand
 --
-
+LISTING
+CHART
+LIST_TOP
+LIST_MINE
+LIST_NOT
+LIST_STATUS
 
 bg=orange</panel_attributes>
     <additional_attributes/>

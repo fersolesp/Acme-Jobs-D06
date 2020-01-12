@@ -441,13 +441,6 @@
         <property name="jingle" value=""/>
         <property name="sponsor" ref="sponsor2Sponsor"/>
     </bean>
-  
-    <!-- CustomisationParameters -->
-    
-    <bean id="customisationParameters01" class="acme.entities.customisationParameters.CustomisationParameter">
-        <property name="spamWordList" value="sex,hard core,viagra,cialis,nigeria,you've won,million dollar,sexo,explícito,viagra,cialis,nigeria,has ganado,un millón de dolares"/>
-        <property name="spamThreshold" value="1.0"/>
-    </bean>
     
     <!--  Employers -->
  <bean name="employer1UserAccount" class="acme.framework.entities.UserAccount">
