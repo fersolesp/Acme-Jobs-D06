@@ -37,3 +37,5 @@
 	</acme:footer-logo>		
 	
 </acme:footer-panel>
+
+<img src="${banner.picture}" style="display:block; margin:auto; padding-top:15px">

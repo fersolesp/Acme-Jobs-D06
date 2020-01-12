@@ -27,11 +27,11 @@
        `id` integer not null,
         `version` integer not null,
         `creation_moment` datetime(6),
-        `justification` varchar(255),
-        `qualifications` varchar(255),
+        `justification` varchar(1024),
+        `qualifications` varchar(1024),
         `reference_number` varchar(255),
-        `skills` varchar(255),
-        `statement` varchar(255),
+        `skills` varchar(1024),
+        `statement` varchar(1024),
         `status` integer,
         `job_id` integer not null,
         `worker_id` integer not null,
@@ -55,7 +55,7 @@
         `version` integer not null,
         `user_account_id` integer,
         `firm` varchar(255),
-        `responsability_statement` varchar(255),
+        `responsability_statement` varchar(1024),
         primary key (`id`)
     ) engine=InnoDB;
 
@@ -63,7 +63,7 @@
        `id` integer not null,
         `version` integer not null,
         `firm` varchar(255),
-        `responsability_statement` varchar(255),
+        `responsability_statement` varchar(1024),
         `status` integer,
         `authenticated_id` integer not null,
         primary key (`id`)
@@ -79,7 +79,7 @@
     create table `blasco_bulletin` (
        `id` integer not null,
         `version` integer not null,
-        `description` varchar(255),
+        `description` varchar(1024),
         `moment` datetime(6),
         `user_name` varchar(255),
         primary key (`id`)
@@ -90,7 +90,7 @@
         `version` integer not null,
         `developer` varchar(255),
         `moment` datetime(6),
-        `skills` varchar(255),
+        `skills` varchar(1024),
         primary key (`id`)
     ) engine=InnoDB;
 
@@ -151,7 +151,7 @@
        `id` integer not null,
         `version` integer not null,
         `moment` datetime(6),
-        `publication` varchar(255),
+        `publication` varchar(1024),
         `publisher` varchar(255),
         primary key (`id`)
     ) engine=InnoDB;
@@ -193,7 +193,7 @@
     create table `investor_records` (
        `id` integer not null,
         `version` integer not null,
-        `investing_statement` varchar(255),
+        `investing_statement` varchar(1024),
         `investor_name` varchar(255),
         `stars` integer,
         `work_sector` varchar(255),
@@ -273,7 +273,7 @@
     create table `pradas_bulletin` (
        `id` integer not null,
         `version` integer not null,
-        `information` varchar(255),
+        `information` varchar(1024),
         `moment` datetime(6),
         `person` varchar(255),
         primary key (`id`)
@@ -313,7 +313,7 @@
     create table `sola_bulletin` (
        `id` integer not null,
         `version` integer not null,
-        `contribution` varchar(255),
+        `contribution` varchar(1024),
         `cybernaut` varchar(255),
         `moment` datetime(6),
         primary key (`id`)
@@ -344,8 +344,8 @@
        `id` integer not null,
         `version` integer not null,
         `user_account_id` integer,
-        `qualifications` varchar(255),
-        `skills` varchar(255),
+        `qualifications` varchar(1024),
+        `skills` varchar(1024),
         primary key (`id`)
     ) engine=InnoDB;
 
@@ -359,6 +359,7 @@ create index IDXnhikaa2dj3la6o2o7e9vo01y0 on `announcement` (`moment`);
     alter table `application` 
        add constraint UK_rf84q38qr35ymh5nn0dcxfdue unique (`reference_number`);
 create index IDXof878cqun8l1ynh0ao94bw3au on `audit_record` (`status`);
+create index IDX7u6rn1f09a74ihkev0ltgqy1j on `auditor_request` (`status`);
 create index IDXnr284tes3x8hnd3h716tmb3fr on `challenge` (`deadline`);
 create index IDX9pkce3d1y6w47wadap5s5xptc on `company_record` (`stars`);
 create index IDX2psiob2l625wbcjcq6rac7jxd on `company_record` (`sector`);
@@ -366,6 +367,7 @@ create index IDX36h1dt0en369n8juiobgqd99n on `investor_records` (`stars`);
 create index IDXio7n08eb64cro3eomn61pxoev on `investor_records` (`work_sector`);
 create index IDXal59yunywnkwi09ps7jxpr18c on `job` (`deadline`, `status`);
 create index IDX8ix743uifflnrs9bupbn6y0h4 on `job` (`reference`);
+create index IDX28ur9xm72oo1df9g14xhnh8h3 on `job` (`status`);
 
     alter table `job` 
        add constraint UK_qpodqtu8nvqkof3olnqnqcv2l unique (`descriptor_id`);
