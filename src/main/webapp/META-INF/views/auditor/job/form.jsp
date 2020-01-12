@@ -20,10 +20,12 @@
             <acme:message code="auditor.job.form.button.duty"/>
     </button>
     
+     <jstl:if test="${expired == true}">
 	 <button type="button" onclick="javascript: clearReturnUrl(); redirect('/auditor/audit-record/create?id=${id}')"
             class="btn btn-default">
             <acme:message code="auditor.job.form.button.auditRecord.create"/>
     </button>
+    </jstl:if>
 	
 	<acme:form-return code="auditor.job.form.button.return"/>
 </acme:form>
