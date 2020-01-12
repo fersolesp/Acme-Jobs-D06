@@ -394,7 +394,7 @@
     
             <!-- CommercialBanners -->
 	<bean id="commercialBanner01" class="acme.entities.commercialBanners.CommercialBanner">
-        <property name="picture" value="https://dcewboipbvgi2.cloudfront.net/sites/default/files/styles/article_hero_image/public/040092014_Piglet.jpg?itok=cy6Le8D1"/>
+        <property name="picture" value="https://i.imgur.com/8YcXhS0.png"/>
         <property name="slogan" value="Si quieres, puedes 02"/>
         <property name="targetURL" value="https://hackertyper.net/"/>
         <property name="creditCard" value="4188432169509768"/>
@@ -402,7 +402,7 @@
     </bean>
 
     <bean id="commercialBanner02" class="acme.entities.commercialBanners.CommercialBanner">
-        <property name="picture" value="https://dcewboipbvgi2.cloudfront.net/sites/default/files/styles/article_hero_image/public/040092014_Piglet.jpg?itok=cy6Le8D1"/>
+        <property name="picture" value="https://i.imgur.com/NGLSjk6.png"/>
         <property name="slogan" value="Yo no soy tonto 02"/>
         <property name="targetURL" value="https://hackertyper.net/"/>
         <property name="creditCard" value="4909378937697948"/>
@@ -410,7 +410,7 @@
     </bean>
 
     <bean id="commercialBanner03" class="acme.entities.commercialBanners.CommercialBanner">
-        <property name="picture" value="https://dcewboipbvgi2.cloudfront.net/sites/default/files/styles/article_hero_image/public/040092014_Piglet.jpg?itok=cy6Le8D1"/>
+        <property name="picture" value="https://i.imgur.com/2eVF1HG.png"/>
         <property name="slogan" value="Estudia y aprobarás 02"/>
         <property name="targetURL" value="https://hackertyper.net/"/>
         <property name="creditCard" value="4028142202935219"/>
@@ -419,7 +419,7 @@
     
                 <!-- NonCommercialBanners -->
 	<bean id="nonCommercialBanner01" class="acme.entities.nonCommercialBanners.NonCommercialBanner">
-        <property name="picture" value="https://dcewboipbvgi2.cloudfront.net/sites/default/files/styles/article_hero_image/public/040092014_Piglet.jpg?itok=cy6Le8D1"/>
+        <property name="picture" value="https://i.imgur.com/fihihcF.png"/>
         <property name="slogan" value="Si quieres, puedes 03"/>
         <property name="targetURL" value="https://hackertyper.net/"/>
         <property name="jingle" value="http://shing.mobile9.com/download/media/702/androidtad_HWH3u1cZ.mp3"/>
@@ -427,19 +427,11 @@
     </bean>
 
     <bean id="nonCommercialBanner02" class="acme.entities.nonCommercialBanners.NonCommercialBanner">
-        <property name="picture" value="https://dcewboipbvgi2.cloudfront.net/sites/default/files/styles/article_hero_image/public/040092014_Piglet.jpg?itok=cy6Le8D1"/>
+        <property name="picture" value="https://i.imgur.com/MtBRoNP.png"/>
         <property name="slogan" value="Yo no soy tonto 03"/>
         <property name="targetURL" value="https://hackertyper.net/"/>
         <property name="jingle" value="http://dight310.byu.edu/media/audio/FreeLoops.com/5/5/Poppy%20Electro%20Live-5562-Free-Loops.com.mp3"/>
     	<property name="sponsor" ref="sponsor1Sponsor"/>
-    </bean>
-
-    <bean id="nonCommercialBanner03" class="acme.entities.nonCommercialBanners.NonCommercialBanner">
-        <property name="picture" value="https://dcewboipbvgi2.cloudfront.net/sites/default/files/styles/article_hero_image/public/040092014_Piglet.jpg?itok=cy6Le8D1"/>
-        <property name="slogan" value="Estudia y aprobarás 03"/>
-        <property name="targetURL" value="https://hackertyper.net/"/>
-        <property name="jingle" value=""/>
-        <property name="sponsor" ref="sponsor2Sponsor"/>
     </bean>
     
     <!--  Employers -->
