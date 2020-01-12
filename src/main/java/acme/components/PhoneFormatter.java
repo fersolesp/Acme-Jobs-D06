@@ -20,13 +20,18 @@ public class PhoneFormatter implements Formatter<Phone> {
 		assert locale != null;
 
 		String result;
-		String countryCodeText, areaCodeText, numberText;
+		String countryCodeText;
+		String areaCodeText, numberText;
 
-		countryCodeText = String.format("+%d", object.getCountryCode());
-		areaCodeText = object.getAreaCode() == null ? "" : String.format("(%s)", object.getAreaCode());
-		numberText = String.format("%s", object.getNumber());
+		countryCodeText = "+" + object.getCountryCode();
+		if (object.getAreaCode() != null) {
+			areaCodeText = " (" + object.getAreaCode() + ") ";
+		} else {
+			areaCodeText = " ";
+		}
+		numberText = object.getNumber();
 
-		result = String.format("+%d%s%ld", countryCodeText, areaCodeText, numberText);
+		result = countryCodeText + areaCodeText + numberText;
 
 		return result;
 	}
@@ -47,7 +52,7 @@ public class PhoneFormatter implements Formatter<Phone> {
 
 		countryCodeRegex = "\\+\\d{1,3}";
 		areaCodeRegex = "\\d{1,6}";
-		numberRegex = "\\d{1,9}([\\s-]\\d{1,9}){0,5}";
+		numberRegex = "\\d{1,9}([\\s-]\\d{1,9}){0,5})";
 		phoneRegex = String.format(//
 			"^\\s*(?<CC>%1$s)(\\s+\\((?<AC>%2$s)\\)\\s+|\\s+)(?<N>%3$s)\\s*$",//
 			countryCodeRegex, areaCodeRegex, numberRegex);
