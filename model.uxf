@@ -19,7 +19,7 @@ bg=yellow</panel_attributes>
     <id>UMLClass</id>
     <coordinates>
       <x>492</x>
-      <y>78</y>
+      <y>210</y>
       <w>114</w>
       <h>72</h>
     </coordinates>
@@ -54,22 +54,11 @@ bg=blue</panel_attributes>
       <x>540</x>
       <y>54</y>
       <w>18</w>
-      <h>36</h>
+      <h>30</h>
     </coordinates>
     <panel_attributes>lt=..
 </panel_attributes>
-    <additional_attributes>10.0;40.0;10.0;10.0</additional_attributes>
-  </element>
-  <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>900</x>
-      <y>108</y>
-      <w>120</w>
-      <h>54</h>
-    </coordinates>
-    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
-    <additional_attributes>10.0;70.0;180.0;10.0</additional_attributes>
+    <additional_attributes>10.0;30.0;10.0;10.0</additional_attributes>
   </element>
   <element>
     <id>UMLClass</id>
@@ -153,14 +142,19 @@ bg=yellow</panel_attributes>
     <id>UMLClass</id>
     <coordinates>
       <x>492</x>
-      <y>162</y>
+      <y>288</y>
       <w>114</w>
-      <h>36</h>
+      <h>84</h>
     </coordinates>
     <panel_attributes>&lt;&lt;Enum&gt;&gt;
 CustomCommand
 --
-
+LISTING
+CHART
+LIST_TOP
+LIST_MINE
+LIST_NOT
+LIST_STATUS
 
 bg=orange</panel_attributes>
     <additional_attributes/>
@@ -168,13 +162,13 @@ bg=orange</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>1008</x>
-      <y>96</y>
+      <x>636</x>
+      <y>246</y>
       <w>120</w>
       <h>48</h>
     </coordinates>
     <panel_attributes>&lt;&lt;Role&gt;&gt;
-Consumer
+Provider
 --
 + company: String {NotBlank}
 + sector: String {NotBlank}</panel_attributes>

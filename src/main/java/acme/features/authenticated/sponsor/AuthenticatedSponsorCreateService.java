@@ -1,5 +1,5 @@
 /*
- * AuthenticatedConsumerCreateService.java
+ * AuthenticatedSponsorCreateService.java
  *
  * Copyright (c) 2019 Rafael Corchuelo.
  *
@@ -35,7 +35,7 @@ public class AuthenticatedSponsorCreateService implements AbstractCreateService<
 	@Autowired
 	private AuthenticatedSponsorRepository repository;
 
-	// AbstractCreateService<Authenticated, Consumer> ---------------------------
+	// AbstractCreateService<Authenticated, Sponsor> ---------------------------
 
 
 	@Override

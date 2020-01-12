@@ -91,19 +91,9 @@ master.menu.administrator.shutdown = Shut down
 master.menu.administrator.dashboard.listing = Display Indicators
 master.menu.administrator.customisationParameter.list = Display Customisation Parameters
 master.menu.administrator.chart= Stadistic Charts
-master.menu.administrator.commercial-banner.list = Manage Commercial Banners
-master.menu.administrator.commercial-banner.create = Create a Commercial Banner
-master.menu.administrator.non-commercial-banner.list = Manage Non Commercial Banners
-master.menu.administrator.non-commercial-banner.create = Create a Non Commercial Banner
 master.menu.administrator.investor-records.create = Create a Investor Record
 master.menu.administrator.investor-records.list = Manage Investor Records
 master.menu.administrator.auditor.list = List auditors' requests
-
-# master.menu.consumer ##########################################################
-
-master.menu.consumer = Consumer
-master.menu.consumer.favourite-link = Favourite link
-master.menu.consumer.offer.create = Create an Offer
 
 # master.menu.employer ########################################################
 master.menu.employer= Employer
@@ -131,8 +121,6 @@ master.menu.auditor.job.listnot= Jobs out of my Audit Records
 
 master.menu.user-account = Account
 master.menu.user-account.general-data = General data
-master.menu.user-account.consumer = Consumer data
-master.menu.user-account.become-consumer = Become a consumer
 master.menu.user-account.become-employer = Become a employer
 master.menu.user-account.employer = Employer data
 master.menu.user-account.become-worker = Become a worker

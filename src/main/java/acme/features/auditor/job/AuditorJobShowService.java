@@ -1,6 +1,10 @@
 
 package acme.features.auditor.job;
 
+import java.util.Calendar;
+import java.util.Date;
+import java.util.GregorianCalendar;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -31,6 +35,11 @@ public class AuditorJobShowService implements AbstractShowService<Auditor, Job> 
 		assert request != null;
 		assert entity != null;
 		assert model != null;
+
+		Calendar calendar;
+		calendar = new GregorianCalendar();
+		Date time = calendar.getTime();
+		model.setAttribute("expired", entity.getDeadline().after(time));
 
 		request.unbind(entity, model, "reference", "title", "deadline", "salary", "moreInfo", "status");
 	}
