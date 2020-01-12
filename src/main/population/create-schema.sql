@@ -138,15 +138,6 @@
         primary key (`id`)
     ) engine=InnoDB;
 
-    create table `consumer` (
-       `id` integer not null,
-        `version` integer not null,
-        `user_account_id` integer,
-        `company` varchar(255),
-        `sector` varchar(255),
-        primary key (`id`)
-    ) engine=InnoDB;
-
     create table `cornac_bulletin` (
        `id` integer not null,
         `version` integer not null,
@@ -276,15 +267,6 @@
         `information` varchar(1024),
         `moment` datetime(6),
         `person` varchar(255),
-        primary key (`id`)
-    ) engine=InnoDB;
-
-    create table `provider` (
-       `id` integer not null,
-        `version` integer not null,
-        `user_account_id` integer,
-        `company` varchar(255),
-        `sector` varchar(255),
         primary key (`id`)
     ) engine=InnoDB;
 
@@ -436,11 +418,6 @@ create index IDXlrvsw21ylkdqa1shrkwg1yssx on `request` (`deadline`);
        foreign key (`sponsor_id`) 
        references `sponsor` (`id`);
 
-    alter table `consumer` 
-       add constraint FK_6cyha9f1wpj0dpbxrrjddrqed 
-       foreign key (`user_account_id`) 
-       references `user_account` (`id`);
-
     alter table `duty` 
        add constraint `FK3cc3garl37bl7gswreqwr7pj4` 
        foreign key (`descriptor_id`) 
@@ -485,11 +462,6 @@ create index IDXlrvsw21ylkdqa1shrkwg1yssx on `request` (`deadline`);
        add constraint `FK162v6eiogk4jr8ykjoe80255x` 
        foreign key (`message_thread_id`) 
        references `message_thread` (`id`);
-
-    alter table `provider` 
-       add constraint FK_b1gwnjqm6ggy9yuiqm0o4rlmd 
-       foreign key (`user_account_id`) 
-       references `user_account` (`id`);
 
     alter table `sponsor` 
        add constraint FK_20xk0ev32hlg96kqynl6laie2 

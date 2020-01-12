@@ -39,10 +39,6 @@
        drop 
        foreign key `FKd0k52g7lcacefcp62kb4p9aor`;
 
-    alter table `consumer` 
-       drop 
-       foreign key FK_6cyha9f1wpj0dpbxrrjddrqed;
-
     alter table `duty` 
        drop 
        foreign key `FK3cc3garl37bl7gswreqwr7pj4`;
@@ -79,10 +75,6 @@
        drop 
        foreign key `FK162v6eiogk4jr8ykjoe80255x`;
 
-    alter table `provider` 
-       drop 
-       foreign key FK_b1gwnjqm6ggy9yuiqm0o4rlmd;
-
     alter table `sponsor` 
        drop 
        foreign key FK_20xk0ev32hlg96kqynl6laie2;
@@ -117,8 +109,6 @@
 
     drop table if exists `company_record`;
 
-    drop table if exists `consumer`;
-
     drop table if exists `cornac_bulletin`;
 
     drop table if exists `customisation_parameter`;
@@ -144,8 +134,6 @@
     drop table if exists `participant`;
 
     drop table if exists `pradas_bulletin`;
-
-    drop table if exists `provider`;
 
     drop table if exists `request`;
 
