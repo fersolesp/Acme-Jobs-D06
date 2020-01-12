@@ -95,12 +95,6 @@ master.menu.administrator.investor-records.create = Crear un Registro de Inverso
 master.menu.administrator.investor-records.list = Administrar Registros de Inversores
 master.menu.administrator.auditor.list = Listar las peticiones de los auditores
 
-# master.menu.provider ########################################################
-
-master.menu.provider = Proveedor
-master.menu.provider.favourite-link = Enlace favorito
-master.menu.provider.request.create= Crear una Solicitud
-
 # master.menu.employer ########################################################
 master.menu.employer= Empleador
 master.menu.employer.job.create= Crear un Trabajo
@@ -126,8 +120,6 @@ master.menu.auditor.job.listnot= Trabajos fuera de mis Registros de Auditoría
 
 master.menu.user-account = Cuenta
 master.menu.user-account.general-data = Datos generales
-master.menu.user-account.provider = Datos de proveedor
-master.menu.user-account.become-provider = Hazte proveedor
 master.menu.user-account.become-employer = Hazte empleador
 master.menu.user-account.employer = Datos de empleador
 master.menu.user-account.become-worker = Hazte trabajador
