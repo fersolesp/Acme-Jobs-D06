@@ -444,6 +444,7 @@
     			<property name="name" value="Robert"/>
     			<property name="surname" value="Williams"/>
     			<property name="email" value="RobertWilliams@acme.com"/>
+    			<property name="phone" value="+34 (890) 1234 5678"/>
     		</bean>
     	</property>
     	<property name="roles">
@@ -680,6 +681,7 @@
     			<property name="name" value="Pedro"/>
     			<property name="surname" value="Olivero"/>
     			<property name="email" value="auditor1@acme.com"/>
+    			<property name="phone" value="+789 (1234) 1234-5678-1010"/>
     		</bean>
     	</property>
     	<property name="roles">
